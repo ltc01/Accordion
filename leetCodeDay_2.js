@@ -79,3 +79,13 @@
 
 // middleNode([1, 2, 3, 4, 5])
 // middleNode([1, 2, 3, 4, 5, 6])
+
+// -----------------383. Ransom Note---------------------
+
+var canConstruct = function(ransomNote, magazine) {
+
+};
+
+// canConstruct("a", "b")
+// canConstruct("aa", "ab")
+// canConstruct("aab", "baa")
