@@ -21,3 +21,17 @@ var relativeSortArray = function(arr1, arr2){
   )
 }
 console.log(relativeSortArray([2,3,1,3,2,4,6,7,9,2,19], [2,1,4,3,9,6]))
+
+// -------125. Valid Palindrome---------------------
+
+var isPalindrome = function(s) {
+  // Convert string to lowercase
+let cleanedString = s.toLowerCase();
+
+// Remove all non-alphanumeric characters
+cleanedString = cleanedString.replace(/[^a-z0-9]/g, '');
+
+// Check if the cleaned string is a palindrome
+let reversedString = cleanedString.split('').reverse().join('');
+return cleanedString === reversedString;
+};
