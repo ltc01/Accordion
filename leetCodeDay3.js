@@ -35,3 +35,22 @@ cleanedString = cleanedString.replace(/[^a-z0-9]/g, '');
 let reversedString = cleanedString.split('').reverse().join('');
 return cleanedString === reversedString;
 };
+
+//-------58. Length of Last Word---------
+
+function lengthOfLastWord(s) {
+  // Trim any trailing spaces from the string
+  s = s.trim();
+  
+  // Split the string by spaces
+  const words = s.split(' ');
+  
+  // Get the last word from the array
+  const lastWord = words[words.length - 1];
+  
+  // Return the length of the last word
+  return lastWord.length;
+}
+
+// Example usage
+console.log(lengthOfLastWord("Hello World")); // 5
