@@ -232,19 +232,47 @@
 
 // removeDuplicates([10,0,1,1,1,2,2,3,3,4])
 
-// ------------27. Remove Element--------------
+// // ------------27. Remove Element--------------
 
-var removeElement = function(nums, val) {
-    var j = 0;
+// var removeElement = function(nums, val) {
+//     var j = 0;
 
-    for(let i=0; i<nums.length; i++){
-        if(nums[i] !== val){
-            nums[j] = nums[i]
-            j++;
-        }
-    }
-    console.log(j, nums.slice(0,j))
-};
+//     for(let i=0; i<nums.length; i++){
+//         if(nums[i] !== val){
+//             nums[j] = nums[i]
+//             j++;
+//         }
+//     }
+//     console.log(j, nums.slice(0,j))
+// };
 
-removeElement([3,2,2,3],3)
+// removeElement([3,2,2,3],3)
 // removeElement([0,1,2,2,3,0,4,2], 2)
+
+
+
+// // -----------28. Find the Index of the First Occurrence in a String-----
+
+// var strStr = function(haystack, needle) {
+//     if(needle== '') {
+//      console.log(0)   
+//     }
+
+//     var n = haystack.length
+//     var m = needle.length
+
+//     for(let i=0; i<n-m; i++){
+//         let j;
+//         for(j=0;j<m;j++){
+//             if(haystack[i+j] !== needle[j]){
+//                 break;
+//             }
+//         }
+//         if(j===m){
+//             console.log(i);
+//         }
+//     }
+//     console.log(-1);
+// };
+
+// strStr("sadbutsad","sad")
