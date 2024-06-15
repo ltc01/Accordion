@@ -183,3 +183,33 @@
 // longestCommonPrefix(["flower","flow","flight"]);
 // longestCommonPrefix(["dog","racecar","car"])
 // longestCommonPrefix(["aaa", "aa", "b"]);
+
+// //-------20. Valid Parentheses---------------------
+
+// var isValid = function(s) {
+    
+//     var stack = []
+//     var pairs = {
+//         '(' : ')',
+//         '{' : '}',
+//         '[' : ']',
+//     }
+
+//     for (let i of s){
+//         if(pairs[i]){
+//             stack.push(i);
+//         }else{
+//             if(stack.length === 0) console.log(false);
+
+//             let item = stack.pop();
+            
+//             if(pairs[item] !== i) console.log(false);
+
+//         }
+
+//     }
+//     console.log( stack.length === 0)
+// };
+
+// isValid("()");
+// isValid("()[]{}");
