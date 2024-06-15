@@ -214,20 +214,37 @@
 // isValid("()");
 // isValid("()[]{}");
 
-// -------------26. Remove Duplicates from Sorted Array-----------
+// // -------------26. Remove Duplicates from Sorted Array-----------
 
-var removeDuplicates = function(nums) {
-    if (nums.length === 0 ) return 0;
-    let j = 1;
+// var removeDuplicates = function(nums) {
+//     if (nums.length === 0 ) return 0;
+//     let j = 1;
 
-    for (let i= 1; i<nums.length; i++){
-        if(nums[i] !== nums[i-1]){
-            console.log(nums[i], nums[i-1])
-            nums[j] = nums[i];
+//     for (let i= 1; i<nums.length; i++){
+//         if(nums[i] !== nums[i-1]){
+//             console.log(nums[i], nums[i-1])
+//             nums[j] = nums[i];
+//             j++;
+//         }
+//     }
+//     console.log(j, nums.slice(0,j))
+// };
+
+// removeDuplicates([10,0,1,1,1,2,2,3,3,4])
+
+// ------------27. Remove Element--------------
+
+var removeElement = function(nums, val) {
+    var j = 0;
+
+    for(let i=0; i<nums.length; i++){
+        if(nums[i] !== val){
+            nums[j] = nums[i]
             j++;
         }
     }
     console.log(j, nums.slice(0,j))
 };
 
-removeDuplicates([10,0,1,1,1,2,2,3,3,4])
+removeElement([3,2,2,3],3)
+// removeElement([0,1,2,2,3,0,4,2], 2)
