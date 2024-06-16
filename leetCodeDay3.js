@@ -187,7 +187,7 @@
 // //-------20. Valid Parentheses---------------------
 
 // var isValid = function(s) {
-    
+
 //     var stack = []
 //     var pairs = {
 //         '(' : ')',
@@ -202,7 +202,7 @@
 //             if(stack.length === 0) console.log(false);
 
 //             let item = stack.pop();
-            
+
 //             if(pairs[item] !== i) console.log(false);
 
 //         }
@@ -276,3 +276,36 @@
 // };
 
 // strStr("sadbutsad","sad")
+
+
+// //-----------------35. Search Insert Position------------
+
+// var searchInsert = function (nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] >= target) {
+//             console.log(i);
+//             break;
+//         }
+//     }
+//     console.log(nums.length)
+// };
+
+// searchInsert([1, 3, 5, 6], 2)
+
+// //------------66. Plus One----------------
+
+// var plusOne = function(digits) {
+//     for(let i=digits.length-1; i>=0; i--){
+//         digits[i]++;
+//         if(digits[i] < 10){
+//             console.log(digits)
+//         }
+//         digits[i]=0
+//     }
+//     digits.unshift(1)
+//     console.log(digits)
+// };
+
+// plusOne([1,2,3])
+// plusOne([4,3,2,1])
+// plusOne([9])
