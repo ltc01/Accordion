@@ -310,25 +310,25 @@
 // plusOne([4,3,2,1])
 // plusOne([9])
 
+// //-------------69. find sqrt of x-------------------------------
 
+// var mySqrt = function(x) {
+//    var left = 0
+//    var right = x
+//    var mid;
 
-var mySqrt = function(x) {
-   var left = 0
-   var right = x
-   var mid;
+//    while(left <= right){
+//     mid = Math.floor((left+right)/2);
 
-   while(left <= right){
-    mid = Math.floor((left+right)/2);
+//     if(mid * mid === x){
+//         console.log(mid)
+//     } else if (mid * mid < x){
+//         left = mid + 1
+//     } else {
+//         right = mid -1
+//     }
+//    }
+// console.log(right)
+// };
 
-    if(mid * mid === x){
-        console.log(mid)
-    } else if (mid * mid < x){
-        left = mid + 1
-    } else {
-        right = mid -1
-    }
-   }
-console.log(right)
-};
-
-mySqrt(36)
+// mySqrt(36)
